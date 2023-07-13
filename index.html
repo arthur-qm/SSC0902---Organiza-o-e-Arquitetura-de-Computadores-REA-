@@ -1,20 +1,24 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trabalho 2</title>
     <!--Iniciando Css e Js-->
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="js/scripts.js" defer></script>
 </head>
+
 <body>
     <header>
         <h1>DEPENDENCIA DE DADOS</h1>
         <div class="btn_area_header">
-            <a href='/index.html'><button class="btn_home">HOME</button></a>
-            <a href='/about.html'><button class="btn_about">SOBRE NÓS</button></a>
+            <a href='./index.html'><button class="btn_home">HOME</button></a>
+            <a href='./about.html'><button class="btn_about">SOBRE NÓS</button></a>
         </div>
     </header>
     <nav>
@@ -27,7 +31,11 @@
                     <br>
                     <br>
                     <p>
-                        São problemas com a instrução do Pipeline na CPU de microarquiteturas que ocorrem quando a próxima instrução não pode ser realizada no próximo ciclo de clock, podendo levar a resultados computacionais incorretos. Existem vários tipos de dependência: de dados, de estrutura e de controle. Dessa forma, uma dependência ocorre quando mais de uma instrução simultânea está em conflito precisando de um dado.
+                        São problemas com a instrução do Pipeline na CPU de microarquiteturas que ocorrem quando a
+                        próxima instrução não pode ser realizada no próximo ciclo de clock, podendo levar a resultados
+                        computacionais incorretos. Existem vários tipos de dependência: de dados, de estrutura e de
+                        controle. Dessa forma, uma dependência ocorre quando mais de uma instrução simultânea está em
+                        conflito precisando de um dado.
                     </p>
                 </div>
                 <img src="imgs/image_cpu.png" alt="img_cpu">
@@ -39,12 +47,16 @@
                     <br>
                     <br>
                     <p>
-                        A dependência de dados (Data Hazard, em inglês), acontece quando a execução de uma instrução depende da disponibilidade de dados produzidos por outra instrução. Existem três tipos de dependência de dados:
+                        A dependência de dados (Data Hazard, em inglês), acontece quando a execução de uma instrução
+                        depende da disponibilidade de dados produzidos por outra instrução. Existem três tipos de
+                        dependência de dados:
                     </p>
                     <br>
                     <br>
                     <p>
-                        <strong>RAW (Read After Write):</strong> também conhecida como dependência verdadeira, acontece quando uma instrução posterior tenta ler o operando antes da instrução anterior escrevê-lo. Ele também é o tipo mais recorrente.
+                        <strong>RAW (Read After Write):</strong> também conhecida como dependência verdadeira, acontece
+                        quando uma instrução posterior tenta ler o operando antes da instrução anterior escrevê-lo. Ele
+                        também é o tipo mais recorrente.
                     </p>
                     <br>
                     <br>
@@ -53,7 +65,12 @@
                     <br>
                     <br>
                     <p>
-                        <strong>WAR (Write After Read):</strong> conhecida como falsa dependência, acontece quando uma instrução posterior tenta escrever um operando antes que uma instrução anterior a tenha lido. Esse tipo de dependência de dados é mais incomum de aparecer, isso porque quando a instrução tenta entrar no estágio write back do pipeline, naquele momento, todas as instruções anteriores contidas no programa já passaram pelo estágio read do registrador e leram seus valores de entrada.
+                        <strong>WAR (Write After Read):</strong> conhecida como falsa dependência, acontece quando uma
+                        instrução posterior tenta escrever um operando antes que uma instrução anterior a tenha lido.
+                        Esse tipo de dependência de dados é mais incomum de aparecer, isso porque quando a instrução
+                        tenta entrar no estágio write back do pipeline, naquele momento, todas as instruções anteriores
+                        contidas no programa já passaram pelo estágio read do registrador e leram seus valores de
+                        entrada.
                     </p>
                     <br>
                     <br>
@@ -62,7 +79,9 @@
                     <br>
                     <br>
                     <p>
-                        <strong>WAW (Write After Write):</strong> também conhecida como dependência de dados de saída, acontece quando uma instrução posterior tenta escrever no operando antes da instrução anterior escrevê-lo.
+                        <strong>WAW (Write After Write):</strong> também conhecida como dependência de dados de saída,
+                        acontece quando uma instrução posterior tenta escrever no operando antes da instrução anterior
+                        escrevê-lo.
                     </p>
                     <br>
                     <br>
@@ -71,7 +90,9 @@
                     <br>
                     <br>
                     <p>
-                        Criamos um código em JavaScript capaz de identidicar Dependências de Dados a partir das linhas de código na linguagem Assembly. (Funcionamento do código bla bla bla, pedir isso pro Arthur, ao invês da imagem vai ser o nosso código)
+                        Criamos um código em JavaScript capaz de identidicar Dependências de Dados a partir das linhas
+                        de código na linguagem Assembly. (Funcionamento do código bla bla bla, pedir isso pro Arthur, ao
+                        invês da imagem vai ser o nosso código)
                     </p>
                 </div>
             </div>
@@ -87,13 +108,22 @@
                     <br>
                     <br>
                     <p>
-                        <strong>Atrasos de Execução:</strong> a dependência de dados cria uma situação em que a instrução subsequente precisa esperar que os dados estejam disponíveis, causando atrasos na execução do programa. Esses atrasos podem afetar negativamente o desempenho geral e a eficiência do programa.
+                        <strong>Atrasos de Execução:</strong> a dependência de dados cria uma situação em que a
+                        instrução subsequente precisa esperar que os dados estejam disponíveis, causando atrasos na
+                        execução do programa. Esses atrasos podem afetar negativamente o desempenho geral e a eficiência
+                        do programa.
                         <br>
                         <br>
-                        <strong>Paralisações de pipeline:</strong> em processadores com pipeline, dependências de dados podem levar a paralisações ou bolhas de pipeline. Quando um perigo de dados é detectado, o pipeline deve parar e esperar que os dados necessários estejam disponíveis. Isso leva a ciclos de clock desperdiçados e taxa de transferência reduzida do processador.
+                        <strong>Paralisações de pipeline:</strong> em processadores com pipeline, dependências de dados
+                        podem levar a paralisações ou bolhas de pipeline. Quando um perigo de dados é detectado, o
+                        pipeline deve parar e esperar que os dados necessários estejam disponíveis. Isso leva a ciclos
+                        de clock desperdiçados e taxa de transferência reduzida do processador.
                         <br>
                         <br>
-                        <strong>Resultados incorretos:</strong> dependências de dados também podem causar resultados incorretos se não forem tratados adequadamente. Por exemplo, se uma instrução depende de uma instrução anterior que ainda não concluiu sua execução, a instrução pode usar dados incorretos ou obsoletos. Isso pode levar a bugs, travamentos do programa ou comportamento imprevisível.
+                        <strong>Resultados incorretos:</strong> dependências de dados também podem causar resultados
+                        incorretos se não forem tratados adequadamente. Por exemplo, se uma instrução depende de uma
+                        instrução anterior que ainda não concluiu sua execução, a instrução pode usar dados incorretos
+                        ou obsoletos. Isso pode levar a bugs, travamentos do programa ou comportamento imprevisível.
                     </p>
                 </div>
             </div>
@@ -104,22 +134,30 @@
                     <br>
                     <br>
                     <p>
-                        <strong>Reordenar instruções:</strong> mudar a ordem das linhas de código para que haja linhas suficientes entre as duas instruções para que não haja dependência de dados
+                        <strong>Reordenar instruções:</strong> mudar a ordem das linhas de código para que haja linhas
+                        suficientes entre as duas instruções para que não haja dependência de dados
                     </p>
                     <br>
                     <br>
                     <p>
-                        <strong>Usar instruções sem efeito:</strong> inserir instruções nop entre duas instruções que tem dependência entre si, isso via causar uma pausa planejada no código para que a instrução anterior seja executada
+                        <strong>Usar instruções sem efeito:</strong> inserir instruções nop entre duas instruções que
+                        tem dependência entre si, isso via causar uma pausa planejada no código para que a instrução
+                        anterior seja executada
                     </p>
                     <br>
                     <br>
                     <p>
-                        <strong>Encaminhamento de dados (data forwarding):</strong> também conhecido como "bypassing", o encaminhamento de dados é uma técnica que permite que o resultado de uma instrução seja enviado diretamente para uma instrução subsequente que depende desse resultado, evitando a necessidade de esperar que os dados sejam armazenados e recuperados da memória ou dos registradores
+                        <strong>Encaminhamento de dados (data forwarding):</strong> também conhecido como "bypassing", o
+                        encaminhamento de dados é uma técnica que permite que o resultado de uma instrução seja enviado
+                        diretamente para uma instrução subsequente que depende desse resultado, evitando a necessidade
+                        de esperar que os dados sejam armazenados e recuperados da memória ou dos registradores
                     </p>
                     <br>
                     <br>
                     <p>
-                        <strong>Uso de caches:</strong> o uso de memória cache de alto desempenho pode ajudar a reduzir os data hazards, pois os dados frequentemente acessados ​​podem ser mantidos próximos à unidade de processamento, minimizando a latência de acesso à memória principal.
+                        <strong>Uso de caches:</strong> o uso de memória cache de alto desempenho pode ajudar a reduzir
+                        os data hazards, pois os dados frequentemente acessados ​​podem ser mantidos próximos à unidade
+                        de processamento, minimizando a latência de acesso à memória principal.
                     </p>
                     <br>
                     <br>
@@ -132,4 +170,5 @@
     <footer>
     </footer>
 </body>
+
 </html>
