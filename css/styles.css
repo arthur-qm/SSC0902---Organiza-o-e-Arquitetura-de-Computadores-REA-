@@ -1,0 +1,166 @@
+* {
+    font-family: Arial;
+    color: white;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: #262526;
+}
+
+header {
+    background: #165941;
+    display: flex;
+    flex-direction:row;
+    min-height: 80px;
+    height: auto;
+}
+
+header h1 {
+    display: flex;
+    align-items: center;
+    color: white;
+    padding: 1rem;
+    width: 80%;
+}
+
+h2 {
+    color: #BFA454;
+}
+
+strong {
+    color: #027353;
+}
+
+p {
+    font-size: 18px;
+}
+
+.btn_area_header {
+    padding: 2rem;
+    width: 20%;
+    display: flex;
+    flex-direction: row;
+}
+
+button {
+    border: none;
+    background-color: inherit;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.5rem;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #1D7353;
+}
+
+.btn_home, .btn_about {
+    margin-right: 1rem;
+}
+
+nav {
+    background: #1D7353;
+    min-height: 20px;
+}
+
+footer {
+    min-height: 80px;
+    background: #165941;
+}
+
+.container {
+    margin: 1rem auto;
+    max-width: 1200px;
+    padding: 2rem;
+}
+
+/* .container img {
+    max-width: 1000px;
+    max-height: 500px;
+} */
+
+/* index */
+
+.title_text {
+    display: flex;
+    flex-direction: column;
+}
+
+.text_area1 {
+    display: flex;
+    flex-direction: row;
+}
+
+.text_area1 p {
+    width: 95%;
+}
+
+.text_area1 img {
+    max-width: 200px;
+    max-height: 200px;
+    width: auto;
+    height: auto;
+}
+
+.text_area3 {
+    display: flex;
+    flex-direction: flex-start;
+}
+
+.text_area3 h2 {
+    text-align: end;
+}
+
+.text_area3 p {
+    text-align: end;
+    width: 100%;
+}
+
+.text_area3 img {
+    max-width: 450px;
+    max-height: 450px;
+    width: auto;
+    height: auto;
+}
+
+/* about */
+
+.imgs_integrantes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.integrante {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+}
+
+.integrante p{
+    font-size: 24px;
+}
+
+.background_img {
+    background-image: url("/imgs/image_cpu.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.background_img img {
+    margin-bottom: 0.6rem;
+    margin-right: 0.5rem;
+    width: 160px;
+}
