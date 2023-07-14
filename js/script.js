@@ -252,7 +252,7 @@ function roda_linha(comando) {
         registradores[comando.args[0][1]] = registradores[comando.args[1][1]];
         return registradores[comando.args[0][1]];
     } else if (comando.nome_comando === 'show') {
-        texto_saida += `${registradores[comando.args[0][1]]} \n`;
+        texto_saida += `${registradores[comando.args[0][1]]} <br>`;
         return registradores[comando.args[0][1]];
     }
 }
