@@ -12,7 +12,7 @@ body {
 header {
     background: #165941;
     display: flex;
-    flex-direction:row;
+    flex-direction: row;
     min-height: 80px;
     height: auto;
 }
@@ -58,7 +58,8 @@ button:hover {
     background: #1D7353;
 }
 
-.btn_home, .btn_about {
+.btn_home,
+.btn_about {
     margin-right: 1rem;
 }
 
@@ -127,6 +128,91 @@ footer {
     height: auto;
 }
 
+#area_code {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.entrada {
+    height: 350px;
+    width: 45%;
+    border: 10px solid black;
+    background-color: white;
+}
+
+#form_entrada {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#form_entrada p {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    font-size: 44px;
+    color: black;
+}
+
+.form_input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+    height: 200px;
+}
+
+.form_input button {
+    text-align: center;
+    margin-top: 2rem;
+    width: 150px;
+    background-color: black;
+}
+
+#box_text {
+    border: 2px solid black;
+    resize: none;
+    box-sizing: border-box;
+    color: black;
+    width: 400px;
+    height: 150px;
+}
+
+.saida {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 350px;
+    width: 45%;
+    border: 10px solid black;
+    background-color: white;
+}
+
+.saida p {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    font-size: 44px;
+    color: black;
+}
+
+.area_saida {
+    margin-bottom: 2rem;
+    width: 90%;
+    height: 100%;
+    word-wrap: break-word;
+    background-color: #027353;
+    max-height: 250px;
+
+}
+
+.area_saida p {
+    margin: 1rem;
+    font-size: 24px;
+    text-overflow: ellipsis;
+    max-height: 150px;
+
+}
+
 /* about */
 
 .imgs_integrantes {
@@ -142,7 +228,7 @@ footer {
     width: 400px;
 }
 
-.integrante p{
+.integrante p {
     font-size: 24px;
 }
 
@@ -151,7 +237,7 @@ footer {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center center;
-    
+
     width: 300px;
     height: 300px;
     display: flex;
