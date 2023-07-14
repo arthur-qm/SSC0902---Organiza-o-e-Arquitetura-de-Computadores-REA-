@@ -137,8 +137,8 @@ footer {
 .entrada {
     height: 350px;
     width: 45%;
-    border: 10px solid black;
-    background-color: white;
+    background-color: #027353;
+    border-radius: 10px;
 }
 
 #form_entrada {
@@ -151,7 +151,7 @@ footer {
     margin-top: 1rem;
     margin-bottom: 2rem;
     font-size: 44px;
-    color: black;
+    color: #262526;
 }
 
 .form_input {
@@ -162,18 +162,25 @@ footer {
     height: 200px;
 }
 
+.form_input textarea {
+    background-color: white;
+    border-radius: 10px;
+    font-size: 18px;
+  }
+
 .form_input button {
     text-align: center;
     margin-top: 2rem;
     width: 150px;
-    background-color: black;
+    background-color: #BFA454;
+    border-radius: 10px;
+    color: #262526;
 }
 
 #box_text {
-    border: 2px solid black;
     resize: none;
     box-sizing: border-box;
-    color: black;
+    color: #262526;
     width: 400px;
     height: 150px;
 }
@@ -184,15 +191,15 @@ footer {
     align-items: center;
     height: 350px;
     width: 45%;
-    border: 10px solid black;
-    background-color: white;
+    background-color: #027353;
+    border-radius: 10px;
 }
 
 .saida p {
     margin-top: 1rem;
     margin-bottom: 2rem;
     font-size: 44px;
-    color: black;
+    color: #262526;
 }
 
 .area_saida {
@@ -200,9 +207,9 @@ footer {
     width: 90%;
     height: 100%;
     word-wrap: break-word;
-    background-color: #027353;
+    background-color: white;
     max-height: 250px;
-
+    border-radius: 10px;
 }
 
 .area_saida p {
