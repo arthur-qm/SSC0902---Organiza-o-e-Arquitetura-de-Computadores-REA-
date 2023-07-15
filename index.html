@@ -47,7 +47,7 @@
                     <br>
                     <br>
                     <p>
-                        A dependência de dados (Data Hazard, em inglês), acontece quando a execução de uma instrução
+                        A dependência de dados (Data Hazard, em inglês) acontece quando a execução de uma instrução
                         depende da disponibilidade de dados produzidos por outra instrução. Existem três tipos de
                         dependência de dados:
                     </p>
@@ -93,7 +93,10 @@
                         Criamos um código em JavaScript capaz de identidicar Dependências de Dados a partir das linhas
                         de código na linguagem Assembly. Esse código recebe como entrada linhas de código em Assembly
                         RISC-V e sua saída retorna a(s) linha(s) em que ocorrem as dependências. Nosso código reconhece
-                        tanto dependências de dados verdadeiras (RAW) como a WAR e a WAW. 
+                        tanto dependências de dados verdadeiras (RAW) como a WAR e a WAW. Nosso código reconhece os 
+                        comandos mais utilizados em Assembly RISC-V, no caso de leitura e escrita, como: lw, sw, add, 
+                        addi, mul e mv. 
+
                     </p>
 
                 </div>
